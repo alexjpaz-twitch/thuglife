@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+    <style>
+      html, body {
+        text-align: center;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      .glasses {
+        animation-name: slidein;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+        height: 100%;
+      }
+
+      @keyframes slidein {
+        from {
+          transform: translateY(-50%);
+        }
+
+        to {
+          transform: translateY(40%);
+        }
+      }
+    </style>
+	</head>
+	<body>
+    <div class='glasses'>
+      <img  src='./glasses.png' />
+    </div>
+	</body>
+</html>
